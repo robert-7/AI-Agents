@@ -6,7 +6,7 @@ import dotenv
 # Load variables from the nearest .env (without overwriting existing real env vars)
 dotenv.load_dotenv(dotenv_path=dotenv.find_dotenv(usecwd=True), override=False)
 
-def _get_required_env(name: str) -> str:
+def get_required_env(name: str) -> str:
     value = os.getenv(name)
     if not value:
         raise RuntimeError(

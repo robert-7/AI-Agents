@@ -1,2 +1,3 @@
+linkup-sdk
 openai-agents
 python-dotenv

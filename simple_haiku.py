@@ -4,7 +4,7 @@ from agents import Runner
 
 import env
 
-OPENAI_API_KEY = env._get_required_env("OPENAI_API_KEY")
+OPENAI_API_KEY = env.get_required_env("OPENAI_API_KEY")
 
 def haiku_agent():
     '''An agent that writes a a haiku about recursion.'''

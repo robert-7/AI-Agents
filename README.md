@@ -35,6 +35,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 cp .env.template .env
+sed -i 's/LINKUP_API_KEY=.*/LINKUP_API_KEY=INSERT_KEY_HERE/g'
 sed -i 's/OPENAI_API_KEY=.*/OPENAI_API_KEY=INSERT_KEY_HERE/g'
 ```
 
@@ -46,3 +47,10 @@ To deactivate or reactivate your virtual environment, simply run:
 deactivate                # deactivates virtualenv
 source .venv/bin/activate # reactivates virtualenv
 ```
+
+### Debugging
+
+For additional details for
+
+* [Linkup](https://app.linkup.so/home)
+* [OpenAI Observability](https://platform.openai.com/logs)
